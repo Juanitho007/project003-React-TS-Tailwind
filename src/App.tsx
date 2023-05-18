@@ -83,7 +83,7 @@ const App = () => {
               <p className="text-2xl font-semibold text-white">
                 No hay residentes en esta dimensión
               </p>
-              <img src="public/img/rick3.png" alt="logo Rick and Morty" />
+              <img src="/img/rick3.png" alt="logo Rick and Morty" />
             </section>
           ) : (
             <>
