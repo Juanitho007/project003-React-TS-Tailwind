@@ -7,7 +7,7 @@ export interface LocationInfo {
   name: string;
   type: string;
   dimension: string;
-  residents: string[];
+  residents: [string];
 }
 export interface Residents {
   id: number | string;
@@ -28,6 +28,11 @@ export interface SearchProps {
   optionsLocations: NameLocation[];
   handleSelect: (id: number) => void;
 }
-export interface ResidentProps{
+export interface ResidentProps {
   urlResident: string;
+  residentsArray?: [Residents]
+}
+export interface UsePag {
+  urlResidents: Array<string>,
+  quantityPagination:number
 }

@@ -23,7 +23,7 @@ const ResidentInfo = ({ urlResident }: ResidentProps) => {
     <>
       {resident ? (
         <div
-          className={`p-3 rounded-3xl border-4 border-gray-700 ${
+          className={`p-3 rounded-3xl border-4 border-gray-700 max-w-[256px] ${
             resident.status && resident.status === "Alive"
               ? "bg-green-400 opacity-100"
               : resident.status === "unknown"
