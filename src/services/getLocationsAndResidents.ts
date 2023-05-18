@@ -37,22 +37,15 @@ export const getLocationById = async (id: number): Promise<LocationInfo> => {
   }
 };
 
-export const loadResident = async (
-  residents: string[]
-): Promise<Residents[]> => {
-  if (!residents) {
+export const loadResident = async (resident: string): Promise<Residents> => {
+  if (!resident) {
     throw new Error(
       "No se encotraron residentes, hubo un error en la solicitud"
     );
   }
   try {
-    const responses = await Promise.all(
-      residents.map(async (resident) => {
-        const response = await axios.get(resident);
-        return response.data;
-      })
-    );
-    return responses;
+    const response = await axios.get(resident);
+    return response.data;
   } catch (error) {
     throw new Error(
       "Tienes un error al hacer la petición, no podemos mostrar los residentes"

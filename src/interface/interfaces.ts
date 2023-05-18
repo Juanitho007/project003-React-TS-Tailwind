@@ -18,7 +18,6 @@ export interface Residents {
   gender: string;
   image: string;
   episode: string[];
-  residents?: string[];
 }
 export interface LocationProps{
   locationInfo: LocationInfo;
@@ -30,5 +29,5 @@ export interface SearchProps {
   handleSelect: (id: number) => void;
 }
 export interface ResidentProps{
-  resident: Residents;
+  urlResident: string;
 }
