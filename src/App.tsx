@@ -79,7 +79,7 @@ const App = () => {
             handleSelect={handleSelect}
           />
           {listSlice?.length === 0 ? (
-            <section className="mx-auto">
+            <section className="max-w-[400px] mx-auto">
               <p className="text-2xl font-semibold text-white">
                 No hay residentes en esta dimensión
               </p>
