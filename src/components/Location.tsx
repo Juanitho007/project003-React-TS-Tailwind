@@ -7,7 +7,7 @@ const Location = ({ locationInfo }: LocationProps) => {
     <div className="flex flex-col text-center items-center justify-between gap-3 font-fre sm:w-[500px] md:w-[750px] mx-auto">
       <div className="w-screen md:w-[750px] overflow-hidden rounded-br-3xl rounded-bl-3xl relative">
         <img
-          src="../../public/img/barner.webp"
+          src="/img/barner.webp"
           alt="barner rick and morty"
           className="blur-[2px] relative min-h-[250px] "
         />
